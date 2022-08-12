@@ -4,6 +4,9 @@ import PropTypes from 'prop-types';
 const DefaultLayout = ({ children }) => (
   <section>
     <header>
+      <h1>
+        Bookstore CMS
+      </h1>
       <nav>
         <Link to="/">Books</Link>
         <Link to="/categories">Categories</Link>
