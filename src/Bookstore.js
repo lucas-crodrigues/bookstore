@@ -1,15 +1,15 @@
 import { Routes, Route } from 'react-router-dom';
 import DefaultLayout from './components/DefaultLayout/DefaultLayout';
-import BookList from './components/BookList/BookList';
+import Books from './Pages/Books';
 import Categories from './Pages/Categories';
 
-const Bookstore = () => {
+const Bookstore = () => (
   <DefaultLayout>
     <Routes>
-      <Route path="/" element={<BookList />} />
+      <Route path="/" element={<Books />} />
       <Route path="/categories" element={<Categories />} />
     </Routes>
-  </DefaultLayout>;
-};
+  </DefaultLayout>
+);
 
 export default Bookstore;
