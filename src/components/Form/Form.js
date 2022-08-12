@@ -1,9 +1,9 @@
-const Form = () => {
+const Form = () => (
   <form>
     <input type="text" placeholder="Book title..." />
     <input type="text" placeholder="Author..." />
     <button type="submit">Add Book</button>
-  </form>;
-};
+  </form>
+);
 
 export default Form;

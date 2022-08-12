@@ -1,11 +1,11 @@
 import BookList from '../components/BookList/BookList';
 import Form from '../components/Form/Form';
 
-const Books = () => {
+const Books = () => (
   <div>
-    <BookList booksList={[]} />
+    <BookList booksList={[{ title: 'The Alchemist', author: 'Paulo Coelho', id: 1 }]} />
     <Form />
-  </div>;
-};
+  </div>
+);
 
 export default Books;
