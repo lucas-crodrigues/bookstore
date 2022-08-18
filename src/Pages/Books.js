@@ -1,11 +1,16 @@
+import { useSelector } from 'react-redux/es/exports';
 import BookList from '../components/BookList/BookList';
 import Form from '../components/Form/Form';
 
-const Books = () => (
-  <div>
-    <BookList booksList={[{ title: 'The Alchemist', author: 'Paulo Coelho', id: 1 }]} />
-    <Form />
-  </div>
-);
+const Books = () => {
+  const BooksList = useSelector((state) => state.books);
+
+  return (
+    <div>
+      <BookList booksList={BooksList} />
+      <Form />
+    </div>
+  );
+};
 
 export default Books;
