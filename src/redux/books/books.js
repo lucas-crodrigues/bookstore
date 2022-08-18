@@ -1,7 +1,20 @@
 const ADD = 'BOOKSTORE/books/ADD';
 const REMOVE = 'BOOKSTORE/books/REMOVE';
 
-export default (state = [], action) => {
+const booksList = [
+  {
+    title: 'The Alchemist',
+    author: 'Paulo Coelho',
+    id: '0',
+  },
+  {
+    title: 'The Lord of the Rings',
+    author: 'J.R.R. Tolkien',
+    id: '1',
+  },
+];
+
+export default (state = booksList, action) => {
   switch (action.type) {
     case ADD:
       return [...state, {
