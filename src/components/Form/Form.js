@@ -10,7 +10,12 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addBook(titleValue, authorValue, uuidv4()));
+    dispatch(addBook({
+      item_id: uuidv4(),
+      title: titleValue,
+      author: authorValue,
+      category: 'Fiction',
+    }));
     e.target.reset();
   };
 
