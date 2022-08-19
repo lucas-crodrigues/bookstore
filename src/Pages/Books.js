@@ -8,6 +8,7 @@ import {
   getBooksStatus,
   getBooksError,
 } from '../redux/books/books';
+import './Books.css';
 
 const Books = () => {
   const dispatch = useDispatch();
@@ -34,6 +35,7 @@ const Books = () => {
         id: element,
         author: bookList[0][element][0].author,
         title: bookList[0][element][0].title,
+        category: bookList[0][element][0].category,
       });
     });
     content = <BookList booksList={library} />;
@@ -46,6 +48,7 @@ const Books = () => {
       <div className="booksArea">
         {content}
       </div>
+      <div className="horizontal-divider" />
       <Form />
     </>
   );

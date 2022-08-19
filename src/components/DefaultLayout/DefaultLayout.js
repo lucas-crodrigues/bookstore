@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import './DefaultLayout.css';
 
 const DefaultLayout = ({ children }) => (
   <section>
@@ -11,8 +12,11 @@ const DefaultLayout = ({ children }) => (
         <Link to="/">Books</Link>
         <Link to="/categories">Categories</Link>
       </nav>
+      <button className="icon-button" type="button">
+        <span className="material-icons primary-color"> 👨‍💼 </span>
+      </button>
     </header>
-    <main>
+    <main className="container">
       {children}
     </main>
     <footer
