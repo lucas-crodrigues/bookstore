@@ -15,7 +15,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Demo
 
- [N/A](#)
+ [Bookstore](https://62ffc37ff0b2c90dc7040ef3--spectacular-fudge-d86df6.netlify.app/)
 
  ## Video Preview
 
