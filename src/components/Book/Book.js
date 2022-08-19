@@ -5,15 +5,13 @@ import { removeBook } from '../../redux/books/books';
 
 const Book = (props) => {
   const {
-    title, author, item_id, category,
+    title, author, item_id,
   } = props;
 
   const dispatch = useDispatch();
 
   const handleRemove = () => {
-    dispatch(removeBook({
-      title, author, item_id, category,
-    }));
+    dispatch(removeBook(item_id));
   };
 
   return (
@@ -29,7 +27,6 @@ Book.propTypes = {
   item_id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
 };
 
 export default Book;
